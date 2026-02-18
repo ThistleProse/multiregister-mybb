@@ -12,7 +12,7 @@ function multiregister_info()
 {
 	return array(
 		"name"			=> "Multiregister",
-		"description"	=> "Registrierung von Mehrcharakteren über das UserCP inkl. automatischer Verknüpfung durch Accountswitcher",
+		"description"	=> "Registration of multiple characters via the UserCP, including automatic linking by account switcher.",
 		"website"		=> "https://github.com/its-sparks-fly",
 		"author"		=> "sparks fly",
 		"authorsite"	=> "https://github.com/its-sparks-fly",
@@ -30,7 +30,7 @@ function multiregister_install()
 	$setting_group = array(
 	    'name' => 'multiregister',
 	    'title' => 'Multiregister',
-	    'description' => 'Einstellungen für das Multiregister-Plugin.',
+	    'description' => 'Settings for the multi-register plugin.',
 	    'disporder' => 1,
 	    'isdefault' => 0
 	);
@@ -39,15 +39,15 @@ function multiregister_install()
 	$setting_array = array(
 		// A yes/no boolean box
 		'multiregister_as' => array(
-				'title' => 'Mit dem Accountswitcher verbinden?',
-				'description' => 'Sollen neu erstellte Charaktere automatisch mit dem entsprechenden Hauptaccount verbunden werden?',
+				'title' => 'Connect to the account switcher?',
+				'description' => 'Should newly created characters be automatically linked to the corresponding main account?',
 				'optionscode' => 'yesno',
 				'value' => 0,
 				'disporder' => 1
 		),
 	  'multiregister_usergroup' => array(
-      	'title' => 'Benutzergruppe für neu erstellte Accounts',
-	      'description' => 'In welcher Nutzergruppe sollen neu erstellte Accounts landen?',
+      	'title' => 'User group for newly created accounts',
+	      'description' => 'In which user group should newly created accounts end up?',
 	      'optionscode' => 'text',
 	      'value' => '',
        'disporder' => 2
