@@ -1,40 +1,39 @@
+Google-Translate English version of this epic myBB mod.
+
 <h1># Multiregister</h1>
-Dieses Plugin erlaubt es euren Usern, ohne viel Aufwand neue Charaktere zu registrieren - und das direkt über das UserCP! Ganz ohne Ausloggen: einfach Charakternamen Passwort und falls nötig benötigte Profilfelder bei Registrierung angeben und los geht's. E-Mail-Adresse und Einstellungen werden automatisch vom aktiven Charakter übernommen. Je nachdem ob die Kooperation mit dem Accountswitcher-Plugin aktiviert ist, wird der neu erstellte Account direkt mit dem Master-Account des aktuellen Accounts (oder mit ihm, falls keiner vorhanden!) verknüpft. Folgende Einstellungen werden im AdminCP gemacht:
+This plugin allows your users to register new characters effortlessly – directly through the UserCP! No need to log out: simply enter the character name, password, and any required profile fields during registration, and you're good to go. The email address and settings are automatically transferred from the active character. Depending on whether the Account Switcher plugin is enabled, the newly created account will be directly linked to the master account of the current account (or to the master account itself if none exists). The following settings are configured in the AdminCP:
 
 <ul>
-<li> Accountswitcher-Kooperation aktivieren/deaktivieren
-<li> Standardbenutzergruppe neu erstellter Accounts
+<li> Enable/disable Account Switcher
+<li> Default user group for newly created accounts
 </ul>
 
-<h1>Plugin funktionsfähig machen</h1>
+<h1>Plugin ACP</h1>
 <ul>
-<li>Die Plugin-Datei ladet ihr in den angegebenen Ordner <b>inc/plugins</b> hoch.
-<li>Die Sprachdatei ladet ihr in den angegebenen Ordner <b>inc/languages/deutsch_du</b> hoch.
-<li>Das Plugin muss nun im Admin CP unter <b>Konfiguration - Plugins</b> installiert und aktiviert werden
-<li>In den Foreneinstellungen findet ihr nun - ganz unten - Einstellungen zu "Bewerber-Checklist". Macht dort eure Einstellungen.
+<li>Upload the plugin file to the specified folder <b>inc/plugins</b>.
+<li>Upload the language file to the specified folder <b>inc/languages/english</b>.
+<li>The plugin must now be installed and activated in the Admin CP under <b>Configuration - Plugins</b>.
+<li>Configuration -> Settings -> Plugin Settings -> Multiregister to set Account Switcher link, and Default Usergroup.
 </ul><br />
 
-Das Plugin ist nun einsatzbereit.
-In der Navigation des UserCPs findet sich ein Verweis auf die entsprechende Seite:
+The plugin is now ready for use.
+The navigation of the UserCP contains a link to the corresponding page:
 usercp.php?action=multiregister
 
-<h1>Template-Änderungen</h1>
-Folgende Templates werden durch dieses Plugin <i>neu hinzugefügt</i>:
+<h1>Templates</h1>
+The following templates are added by this plugin:
 <ul>
 <li>usercp_multiregister
 <li>usercp_multiregister_master
 <li>usercp_nav_multiregister
 </ul>
 
-<h1>Demo</h1><br />
-<center>
-<img src="http://fs5.directupload.net/images/170818/5warz3bl.png" /><br />
-http://fs5.directupload.net/images/170818/5warz3bl.png<br /><br />
+<h1>Previews</h1><br />
 
-<img src="http://fs5.directupload.net/images/170818/i8587dlo.png" /><br />
-http://fs5.directupload.net/images/170818/i8587dlo.png<br /><br />
+<center><img width="744" height="297" alt="Screenshot 2026-02-18 194026" src="https://github.com/user-attachments/assets/2a8ae627-65c5-400c-9f8f-3c9d4edcaf66" /></center>
 
-</center>
+User CP:
+<center><img width="924" height="398" alt="Screenshot 2026-02-18 194000" src="https://github.com/user-attachments/assets/0f36502e-0ab8-497a-9f8d-8bc4d68d6512" /></center>
 
-Das Plugin wurde unter der aktuellsten MyBB-Version und im aktiven Forengebrauch getestet. Bei ersten Tests sind <em>keine Fehler</em> unterlaufen; es empfiehlt sich trotz Allem, die Datenbank vor dem Installieren und erstmaligen Gebrauch zu sichern. 
+The plugin was tested under the latest MyBB version and in active forum use. No errors occurred during initial tests; however, it is still recommended to back up the database before installation and first use. 
 
